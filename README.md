@@ -57,8 +57,6 @@ LLM-chatbot/
     **Note:** Running the Mistral model locally with Ollama requires at least 8GB of RAM.
 
 
-6. Download or generate the dataset `data/crime_filtered.csv` (filtered for 2020–2022 and columns as per the template).
-
 ## Dataset
 
 - The original, unfiltered Chicago crime dataset can be downloaded from the City of Chicago open data portal:
@@ -67,7 +65,7 @@ LLM-chatbot/
 
 
 - This project uses a **filtered version** (`data/crime_filtered.csv`) containing only records from 2020 to 2022 and the relevant columns. You may generate your own filtered dataset using the original file and the included data filtering script `scripts/build_clean_dataset.py`:
-  - Download the original dataset (´crime_raw.csv´) and place it in the ´data/´ folder.
+  - Download the original dataset, named ´crime_raw.csv´, and place it in the ´data/´ folder.
 
   - Run the filtering and cleaning script: ```scripts/build_clean_dataset.py ```
   - This script will:
@@ -78,7 +76,7 @@ LLM-chatbot/
 
 **Note:**
 The filtering logic relies on `src/cleaner.py` and `src/data_loader.py`.
-You can modify these scripts to adapt for different columns or periods as needed.
+You can modify these scripts to adapt for different columns as needed.
 
 ## Running CrimeBot
 
