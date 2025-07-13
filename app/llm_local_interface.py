@@ -3,7 +3,7 @@ import subprocess
 import re
 
 # Default model for local inference via Ollama
-DEFAULT_MODEL = "mistral"  # To switch between LLMs (e.g. gemma:2b), change here
+DEFAULT_MODEL = "mistral"  # To switch between LLMs (e.g., gemma:2b), change here
 
 
 ## Functions
