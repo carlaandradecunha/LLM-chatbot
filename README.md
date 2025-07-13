@@ -41,15 +41,17 @@ LLM-chatbot/
 ## Setup Instructions
 
 1. Clone this repository
+   
 2. Install Python 3.9 or higher. The project is tested with Python 3.10
-
+   
 3. Install [Ollama](https://ollama.com/)
     - For Windows/Mac: download from [https://ollama.com/](https://ollama.com/)
 
-4. Install required Python packages:
+4. From the root directory, create and activate an environment to use in this project and install the required Python packages in it.
     ```bash
     pip install -r requirements.txt
     ```
+        
 5. Pull the LLM model you want to use (e.g. Mistral):
     ```bash
     ollama pull mistral
