@@ -58,16 +58,16 @@ LLM-chatbot/
 
 ## Running CrimeBot
 
-From the root directory, run:
+1. From the root directory, run:
 ```bash
     python app/main.py
 ```
 
-The bot will greet you, ask your name, and prompt you for questions.
+2. The bot will greet you, ask your name, and prompt you for questions.
 
-Type questions about Chicago crime (e.g., `"How many robberies occurred in 2022 in ward 8?"`).
+3. Type questions about Chicago crime (e.g., `"How many robberies occurred in 2022 in ward 8?"`).
 
-To exit, type `'exit'` or `'quit'`.
+4. To exit, type `'exit'` or `'quit'`.
 
 ## Validation
 To check accuracy against the reference validation set:
