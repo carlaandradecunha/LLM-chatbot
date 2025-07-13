@@ -56,28 +56,6 @@ LLM-chatbot/
     ```
     **Note:** Running the Mistral model locally with Ollama requires at least 8GB of RAM.
 
-
-## Dataset
-
-- The original, unfiltered Chicago crime dataset can be downloaded from the City of Chicago open data portal:
-
-  - Crimes - 2001 to Present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
-
-
-- This project uses a **filtered version** (`data/crime_filtered.csv`) containing only records from 2020 to 2022 and the relevant columns. You may generate your own filtered dataset using the original file and the included data filtering script `scripts/build_clean_dataset.py`:
-  - Download the original dataset, named ´crime_raw.csv´, and place it in the ´data/´ folder.
-
-  - Run the filtering and cleaning script: ```scripts/build_clean_dataset.py ```
-  - This script will:
-    - Load the original CSV from data/crime_raw.csv
-    - Filter it for the years 2020–2022
-    - Select and clean only the relevant columns for the chatbot
-    - Save the result as data/crime_filtered.csv
-
-**Note:**
-The filtering logic relies on `src/cleaner.py` and `src/data_loader.py`.
-You can modify these scripts to adapt for different columns as needed.
-
 ## Running CrimeBot
 
 From the root directory, run:
@@ -128,8 +106,29 @@ If the user asks an in-scope question but the chatbot cannot interpret it, it wi
 - `"What is the population of prisoners in Chicago?"`
 → `"I didn't understand that. Could you rephrase your question?"`
 
+## Dataset
+
+- The original, unfiltered Chicago crime dataset can be downloaded from the City of Chicago open data portal:
+
+  - Crimes - 2001 to Present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
+
+- This project uses a **filtered version** (`data/crime_filtered.csv`) containing only records from 2020 to 2022 and the relevant columns. You may generate your own filtered dataset using the original file and the included data filtering script `scripts/build_clean_dataset.py`:
+  - Download the original dataset, named ´crime_raw.csv´, and place it in the ´data/´ folder.
+
+  - Run the filtering and cleaning script: ```scripts/build_clean_dataset.py ```
+  - This script will:
+    - Load the original CSV from data/crime_raw.csv
+    - Filter it for the years 2020–2022
+    - Select and clean only the relevant columns for the chatbot
+    - Save the result as data/crime_filtered.csv
+
+**Note:**
+The filtering logic relies on `src/cleaner.py` and `src/data_loader.py`.
+You can modify these scripts to adapt for different columns as needed.
+
+
 ## Customization
-To switch between LLMs (e.g., Gemma or Mistral), change the DEFAULT_MODEL variable in `app/llm_local_interface.py`.
+To switch between LLMs (e.g., gemma:2b), change the DEFAULT_MODEL variable in `app/llm_local_interface.py`.
 
 You can update or tune prompt rules in `app/prompt_template.txt`.
 
