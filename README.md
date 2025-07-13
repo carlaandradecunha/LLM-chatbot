@@ -61,7 +61,7 @@ LLM-chatbot/
 
 - The original, unfiltered Chicago crime dataset can be downloaded from the City of Chicago open data portal:
 
-  - Crimes - 2001 to Present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data
+  - Crimes - 2001 to Present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
 
 
 - This project uses a **filtered version** (`data/crime_filtered.csv`) containing only records from 2020 to 2022 and the relevant columns. You may generate your own filtered dataset using the original file and the included data filtering script `scripts/build_clean_dataset.py`:
