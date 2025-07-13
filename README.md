@@ -25,7 +25,6 @@ LLM-chatbot/
 │ ├── query_executor.py # Runs generated code on the DataFrame
 │ └── prompt_template.txt # Prompt rules and examples for the LLM
 ├── data/
-│ ├── crime_raw.csv # Complete dataset
 │ ├── crime_filtered.csv # Filtered crime dataset (2020–2022)
 │ ├── validation_set.csv # Validation questions-answers
 │ └── validation_results.txt # Results (generated after validation)
