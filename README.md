@@ -47,10 +47,19 @@ LLM-chatbot/
 3. Install [Ollama](https://ollama.com/)
     - For Windows/Mac: download from [https://ollama.com/](https://ollama.com/)
 
-4. From the root directory, create and activate an environment to use in this project and install the required Python packages in it.
+4. From the root directory, set up a Python environment using one of the provided options:
+   - Using Conda and environment.yml (recommended if you have Conda installed):
     ```bash
-    pip install -r requirements.txt
+    conda env create -f environment.yml
+    conda activate LLM-chatbot  
     ```
+   - Using pip and requirements.txt (if you don’t use Conda):
+    ```bash
+    python -m venv venv
+    venv\\Scripts\\activate (Windows) or source venv/bin/activate (Mac)
+    pip install -r requirements.txt
+    ``` 
+   
         
 5. Pull the LLM model you want to use (e.g. Mistral):
     ```bash
